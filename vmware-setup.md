@@ -111,8 +111,3 @@ Expected result:
 - Windows Server installation media should boot
 - Windows Setup screen should appear
 
----
-
-## 9. Installation (Performed Later)
-
-The operating system installation will be completed in a separate step after this setup stage.

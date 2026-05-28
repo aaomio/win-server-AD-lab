@@ -10,7 +10,7 @@ A structured OU design is used to organise users, computers, and administrative 
 
 The Active Directory management console must be opened:
 
-- Server Manager → Tools → Active Directory Users and Computers
+- Server Manager\Tools\Active Directory Users and Computers
 
 ---
 
@@ -37,7 +37,7 @@ Example users:
 - Morpheus
 
 Each user must be created using:
-- New → User
+- New\User
 - Username and password must be assigned
 
 ---

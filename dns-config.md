@@ -28,14 +28,23 @@ Ensure:
 
 ## 3. Configure DNS on Domain Controller
 
-The Domain Controller must use itself for DNS resolution.
-
-IPv4 settings must be configured by going to ncpa.cpl from Run:
+The Domain Controller must use itself for DNS resolution. IPv4 settings must be configured by going to ncpa.cpl from Run:
 
 - Preferred DNS: Domain Controller IP address
 
-Example:
-- 192.168.1.10
+To identify the correct IP address:
+- Open Command Prompt
+- Run:
+```cmd
+ipconfig /all
+```
+
+- Locate the adapter VMNET and Note the values listed for:
+```
+Default Gateway
+Primary WINS Server
+```
+These should match the IP address assigned to the Domain Controller.
 
 Do NOT use:
 - 127.0.0.1

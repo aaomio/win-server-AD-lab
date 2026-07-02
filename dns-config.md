@@ -33,7 +33,7 @@ The Domain Controller must use itself for DNS resolution. IPv4 settings must be 
 - Preferred DNS: Domain Controller IP address
 
 To identify the correct IP address:
-- Open Command Prompt
+- Open Command Prompt on the device that's running the VM
 - Run:
 ```cmd
 ipconfig /all

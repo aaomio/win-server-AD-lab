@@ -32,21 +32,19 @@ The Domain Controller must use itself for DNS resolution. IPv4 settings must be 
 
 - Preferred DNS: Domain Controller IP address
 
-To identify the correct IP address:
+To identify the correct Gatway IP address:
 - Open Command Prompt on the device that's running the VM
 - Run:
 ```cmd
 ipconfig /all
 ```
-
 - Locate the adapter VMNET and Note the values listed for:
 ```
 Default Gateway
 Primary WINS Server
 ```
-These should match the IP address assigned to the Domain Controller.
 
-Do NOT use:
+DNS IP should match the IP address assigned to the Domain Controller. Do NOT use:
 - 127.0.0.1
 - ::1
 - External DNS (e.g. 8.8.8.8)
